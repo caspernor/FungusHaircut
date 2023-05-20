@@ -15,6 +15,7 @@ module.exports = {
 
         **/
         light: '#FFCC99',
+        cream: '#fbfae5',
       },
     },
   },

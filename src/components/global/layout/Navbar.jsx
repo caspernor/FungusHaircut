@@ -8,10 +8,10 @@ function classNames(...classes) {
 }
 
 const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'Prices', href: '/prices' },
-    { name: 'About Me', href: '/aboutMe' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'Hjem', href: '/' },
+    { name: 'Priser', href: '/prices' },
+    { name: 'Om mig', href: '/aboutMe' },
+    { name: 'Kontakt', href: '/contact' },
   ]
   
 

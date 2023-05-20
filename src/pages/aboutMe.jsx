@@ -1,6 +1,6 @@
 import React from 'react';
-import AboutMe1 from './aboutMe1';
-import AboutMe2 from './aboutMe2';
+import AboutMe1 from './aboutMeEmployee';
+import AboutMe2 from './aboutMeReview';
 
 function AboutMePage() {
   return (
