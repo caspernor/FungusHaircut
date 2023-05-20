@@ -7,7 +7,7 @@ const tiers = [
     name: 'Herre klip',
     id: 'tier-freelancer',
     href: '#',
-    price: { klip: '475 dkk', styling: '$144' },
+    price: '475 kr',
     description: 'Den mest essentielle klip af dit hår.',
     features: ['Konsultasion af ønsker', 
     'Vask af hår', 
@@ -20,7 +20,7 @@ const tiers = [
     name: 'Dame klip',
     id: 'tier-startup',
     href: '#',
-    price: '475 dkk',
+    price: '575 kr',
     description: 'Den mest essentielle klip af længere hår',
     features: [
       '25 products',
@@ -34,7 +34,7 @@ const tiers = [
     name: 'Børne klip',
     id: 'tier-enterprise',
     href: '#',
-    price: { monthly: '$48', annually: '$576' },
+    price: '475 dkk',
     description: 'Klip af børn optil 15 år.',
     features: [
       'Unlimited products',
@@ -48,7 +48,7 @@ const tiers = [
     name: 'Junior klip',
     id: 'tier-freelancer',
     href: '#',
-    price: { klip: '475 dkk', styling: '$144' },
+    price: '475 dkk',
     description: 'Den mest essentielle klip af dit hår.',
     features: ['Konsultasion af ønsker', 
     'Vask af hår', 
@@ -61,7 +61,7 @@ const tiers = [
     name: 'Satellit klip',
     id: 'tier-freelancer',
     href: '#',
-    price: { klip: '475 dkk', styling: '$144' },
+    price: '475 dkk',
     description: 'Den mest essentielle klip af dit hår.',
     features: ['Konsultasion af ønsker', 
     'Vask af hår', 
@@ -74,7 +74,7 @@ const tiers = [
     name: 'Farvning',
     id: 'tier-freelancer',
     href: '#',
-    price: { klip: '475 dkk', styling: '$144' },
+    price: '475 dkk',
     description: 'Den mest essentielle klip af dit hår.',
     features: ['Konsultasion af ønsker', 
     'Vask af hår', 
@@ -87,7 +87,7 @@ const tiers = [
     name: 'Kam striber',
     id: 'tier-freelancer',
     href: '#',
-    price: { klip: '475 dkk', styling: '$144' },
+    price: '475 dkk',
     description: 'Den mest essentielle klip af dit hår.',
     features: ['Konsultasion af ønsker', 
     'Vask af hår', 
@@ -100,7 +100,7 @@ const tiers = [
     name: 'Top striber',
     id: 'tier-freelancer',
     href: '#',
-    price: { klip: '475 dkk', styling: '$144' },
+    price: '475 dkk',
     description: 'Den mest essentielle klip af dit hår.',
     features: ['Konsultasion af ønsker', 
     'Vask af hår', 
@@ -113,7 +113,7 @@ const tiers = [
     name: 'Alm. fuld striber',
     id: 'tier-freelancer',
     href: '#',
-    price: { klip: '475 dkk', styling: '$144' },
+    price: '475 dkk',
     description: 'Den mest essentielle klip af dit hår.',
     features: ['Konsultasion af ønsker', 
     'Vask af hår', 
@@ -126,7 +126,7 @@ const tiers = [
     name: 'Speciel striber',
     id: 'tier-freelancer',
     href: '#',
-    price: { klip: '475 dkk', styling: '$144' },
+    price: '475 dkk',
     description: 'Den mest essentielle klip af dit hår.',
     features: ['Konsultasion af ønsker', 
     'Vask af hår', 
@@ -139,7 +139,7 @@ const tiers = [
     name: 'Max (Taylors)',
     id: 'tier-freelancer',
     href: '#',
-    price: { klip: '475 dkk', styling: '$144' },
+    price: '475 dkk',
     description: 'Den mest essentielle klip af dit hår.',
     features: ['Konsultasion af ønsker', 
     'Vask af hår', 
@@ -192,8 +192,9 @@ export default function Example() {
                 <span className="text-4xl font-bold tracking-tight text-white"></span>
                 <span className="text-sm font-semibold leading-6 text-gray-300"></span>
               </p>
+              <p className="mt-2 text-2xl font-bold leading-6 text-gray-300">{tier.price}</p>
               <a
-                href={tier.href}
+                href='/booking'
                 aria-describedby={tier.id}
                 className={classNames(
                   tier.mostPopular

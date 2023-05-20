@@ -5,26 +5,19 @@ export default function Example() {
           <div className="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
             <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3">
               <div>
-                <h2 className="text-3xl font-bold tracking-tight text-gray-900">Get in touch</h2>
-                <p className="mt-4 leading-7 text-gray-600">
-                  Quam nunc nunc eu sed. Sed rhoncus quis ultricies ac pellentesque.
+                <h2 className="text-3xl font-bold tracking-tight text-light">Get in touch</h2>
+                <p className="mt-4 leading-7 text-white">
+                Kontakt mig på telefon for hurtig booking eller spørgsmål. 
+                Send en mail til andre henvendelser.
                 </p>
               </div>
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
                 <div className="rounded-2xl bg-gray-50 p-10">
-                  <h3 className="text-base font-semibold leading-7 text-gray-900">Collaborate</h3>
+                  <h3 className="text-base font-semibold leading-7 text-gray-900">Telefon</h3>
                   <dl className="mt-3 space-y-1 text-sm leading-6 text-gray-600">
-                    <div>
-                      <dt className="sr-only">Email</dt>
-                      <dd>
-                        <a className="font-semibold text-indigo-600" href="mailto:collaborate@example.com">
-                          collaborate@example.com
-                        </a>
-                      </dd>
-                    </div>
                     <div className="mt-1">
                       <dt className="sr-only">Phone number</dt>
-                      <dd>+1 (555) 905-2345</dd>
+                      <dd>+45 35 36 34 31</dd>
                     </div>
                   </dl>
                 </div>
@@ -40,42 +33,8 @@ export default function Example() {
                       </dd>
                     </div>
                     <div className="mt-1">
-                      <dt className="sr-only">Phone number</dt>
+                      <dt className="sr-only">Telefon nummer</dt>
                       <dd>+1 (555) 905-3456</dd>
-                    </div>
-                  </dl>
-                </div>
-                <div className="rounded-2xl bg-gray-50 p-10">
-                  <h3 className="text-base font-semibold leading-7 text-gray-900">Join our team</h3>
-                  <dl className="mt-3 space-y-1 text-sm leading-6 text-gray-600">
-                    <div>
-                      <dt className="sr-only">Email</dt>
-                      <dd>
-                        <a className="font-semibold text-indigo-600" href="mailto:careers@example.com">
-                          careers@example.com
-                        </a>
-                      </dd>
-                    </div>
-                    <div className="mt-1">
-                      <dt className="sr-only">Phone number</dt>
-                      <dd>+1 (555) 905-4567</dd>
-                    </div>
-                  </dl>
-                </div>
-                <div className="rounded-2xl bg-gray-50 p-10">
-                  <h3 className="text-base font-semibold leading-7 text-gray-900">Say hello</h3>
-                  <dl className="mt-3 space-y-1 text-sm leading-6 text-gray-600">
-                    <div>
-                      <dt className="sr-only">Email</dt>
-                      <dd>
-                        <a className="font-semibold text-indigo-600" href="mailto:hello@example.com">
-                          hello@example.com
-                        </a>
-                      </dd>
-                    </div>
-                    <div className="mt-1">
-                      <dt className="sr-only">Phone number</dt>
-                      <dd>+1 (555) 905-5678</dd>
                     </div>
                   </dl>
                 </div>
@@ -83,38 +42,25 @@ export default function Example() {
             </div>
             <div className="grid grid-cols-1 gap-x-8 gap-y-10 pt-16 lg:grid-cols-3">
               <div>
-                <h2 className="text-3xl font-bold tracking-tight text-gray-900">Locations</h2>
-                <p className="mt-4 leading-7 text-gray-600">
-                  Consequat sunt cillum cillum elit sint. Qui occaecat nisi in ipsum commodo.
+                <h2 className="text-3xl font-bold tracking-tight text-light">Lokasion</h2>
+                <p className="mt-4 leading-7 text-white">
+                Vores salon ligger 50 meter inde fra Nørrebrogade.
                 </p>
+
+                <br></br>
+            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20 text-center">
+                Få vejvisning til salonen her.{' '}
+                <a href="https://goo.gl/maps/rUeyLt64drhZN4UL7" className="font-semibold text-white">
+                <span className="absolute inset-0" aria-hidden="true" />
+                Google Maps <span aria-hidden="true">&rarr;</span>
+                </a>
+            </div>
               </div>
-              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
+              <div className="grid grid-cols-2 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
                 <div className="rounded-2xl bg-gray-50 p-10">
-                  <h3 className="text-base font-semibold leading-7 text-gray-900">Los Angeles</h3>
+                  <h3 className="text-base font-semibold leading-7 text-gray-900">Elmegade 10</h3>
                   <address className="mt-3 space-y-1 text-sm not-italic leading-6 text-gray-600">
-                    <p>4556 Brendan Ferry</p>
-                    <p>Los Angeles, CA 90210</p>
-                  </address>
-                </div>
-                <div className="rounded-2xl bg-gray-50 p-10">
-                  <h3 className="text-base font-semibold leading-7 text-gray-900">New York</h3>
-                  <address className="mt-3 space-y-1 text-sm not-italic leading-6 text-gray-600">
-                    <p>886 Walter Street</p>
-                    <p>New York, NY 12345</p>
-                  </address>
-                </div>
-                <div className="rounded-2xl bg-gray-50 p-10">
-                  <h3 className="text-base font-semibold leading-7 text-gray-900">Toronto</h3>
-                  <address className="mt-3 space-y-1 text-sm not-italic leading-6 text-gray-600">
-                    <p>7363 Cynthia Pass</p>
-                    <p>Toronto, ON N3Y 4H8</p>
-                  </address>
-                </div>
-                <div className="rounded-2xl bg-gray-50 p-10">
-                  <h3 className="text-base font-semibold leading-7 text-gray-900">Chicago</h3>
-                  <address className="mt-3 space-y-1 text-sm not-italic leading-6 text-gray-600">
-                    <p>726 Mavis Island</p>
-                    <p>Chicago, IL 60601</p>
+                    <p>København, Denmark</p>
                   </address>
                 </div>
               </div>

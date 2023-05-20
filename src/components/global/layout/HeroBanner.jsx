@@ -2,11 +2,7 @@
 
 export const HeroBanner = () => {
     const handleOnClick =() => {
-        alert("Dettte er en funksjon")
     }
-
-
-
     return (
         <div className="relative isolate overflow-hidden pt-14">
         <img
@@ -29,7 +25,7 @@ export const HeroBanner = () => {
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
-              Vores salon finder du i nydelige Elmegade, København.{' '}
+              Få vejvisning til salonen her.{' '}
               <a href="https://goo.gl/maps/rUeyLt64drhZN4UL7" className="font-semibold text-white">
                 <span className="absolute inset-0" aria-hidden="true" />
                 Google Maps <span aria-hidden="true">&rarr;</span>
@@ -41,7 +37,7 @@ export const HeroBanner = () => {
               Fungus Haircut
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Velkommen til frisør salonen i Elmegade, København.
+              Vi tilbyder alt fra alminnelig klip, til styling, farvning og hårprodukter.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
