@@ -1,3 +1,4 @@
+import GoogleReviews from "@/components/global/googleReviews";
 import { HeroBanner } from "@/components/global/layout/HeroBanner";
 import { Inter } from "next/font/google";
 
@@ -7,6 +8,7 @@ export default function Home() {
   return (
     <>
       <HeroBanner />
+      <GoogleReviews />
     </>
   );
 }
