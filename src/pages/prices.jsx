@@ -9,10 +9,11 @@ const tiers = [
     href: '#',
     price: '475 kr',
     description: 'Den mest essentielle klip af dit hår.',
-    features: ['Konsultasion af ønsker', 
+    features: [
+    '45 min.', 
     'Vask af hår', 
-    'Saks eller maskin', 
     'Styling'
+
     ],
     mostPopular: false,
   },
@@ -23,49 +24,49 @@ const tiers = [
     price: '575 kr',
     description: 'Den mest essentielle klip af længere hår',
     features: [
-      '25 products',
-      'Up to 10,000 subscribers',
-      'Advanced analytics',
-      '24-hour support response time',
+    '60 min.', 
+    'Vask af hår', 
+    'Styling'
+      
     ],
     mostPopular: false,
   },
   {
-    name: 'Børne klip',
+    name: 'Junior-klip',
     id: 'tier-enterprise',
     href: '#',
-    price: '475 dkk',
-    description: 'Klip af børn optil 15 år.',
+    price: '400 dkk',
+    description: 'For børn mellem 10-16 år.',
     features: [
-      'Unlimited products',
-      'Unlimited subscribers',
-      'Advanced analytics',
-      '1-hour, dedicated support response time',
+    '40 min.', 
+    'Vask af hår',  
+    'Styling'
+
     ],
     mostPopular: false,
   },
   {
-    name: 'Junior klip',
+    name: 'Børne-klip',
     id: 'tier-freelancer',
     href: '#',
-    price: '475 dkk',
-    description: 'Den mest essentielle klip af dit hår.',
-    features: ['Konsultasion af ønsker', 
+    price: '350 dkk',
+    description: 'Den mest essentielle klip for dit barn.',
+    features: [
+    '30 min.', 
     'Vask af hår', 
-    'Saks eller maskin', 
     'Styling'
     ],
     mostPopular: false,
   },
   {
-    name: 'Satellit klip',
+    name: 'Satelit-klip',
     id: 'tier-freelancer',
     href: '#',
-    price: '475 dkk',
-    description: 'Den mest essentielle klip af dit hår.',
-    features: ['Konsultasion af ønsker', 
-    'Vask af hår', 
-    'Saks eller maskin', 
+    price: '375 dkk',
+    description: 'Hvis du ikke har så meget hår eller er tyndhåret',
+    features: [
+    '35 min.', 
+    'Vask af hår',
     'Styling'
     ],
     mostPopular: false,
@@ -75,10 +76,10 @@ const tiers = [
     id: 'tier-freelancer',
     href: '#',
     price: '475 dkk',
-    description: 'Den mest essentielle klip af dit hår.',
-    features: ['Konsultasion af ønsker', 
-    'Vask af hår', 
-    'Saks eller maskin', 
+    description: 'Almindelig farvning af dit hår.',
+    features: [
+    '80 min.', 
+    'Konsultasion af ønsker', 
     'Styling'
     ],
     mostPopular: false,
@@ -87,11 +88,11 @@ const tiers = [
     name: 'Kam striber',
     id: 'tier-freelancer',
     href: '#',
-    price: '475 dkk',
-    description: 'Den mest essentielle klip af dit hår.',
-    features: ['Konsultasion af ønsker', 
-    'Vask af hår', 
-    'Saks eller maskin', 
+    price: '400 dkk',
+    description: 'En let måde at få solstrejf i det mørke vinterhår',
+    features: [
+    '30 min.',
+    'Konsultasion af ønsker',  
     'Styling'
     ],
     mostPopular: false,
@@ -100,11 +101,11 @@ const tiers = [
     name: 'Top striber',
     id: 'tier-freelancer',
     href: '#',
-    price: '475 dkk',
-    description: 'Den mest essentielle klip af dit hår.',
-    features: ['Konsultasion af ønsker', 
-    'Vask af hår', 
-    'Saks eller maskin', 
+    price: '900 dkk',
+    description: 'Striber fra tændning til tændning, i det halve hår.',
+    features: [
+    '85 min.',
+    'Konsultasion af ønsker',  
     'Styling'
     ],
     mostPopular: false,
@@ -113,37 +114,24 @@ const tiers = [
     name: 'Alm. fuld striber',
     id: 'tier-freelancer',
     href: '#',
-    price: '475 dkk',
-    description: 'Den mest essentielle klip af dit hår.',
-    features: ['Konsultasion af ønsker', 
-    'Vask af hår', 
-    'Saks eller maskin', 
+    price: '1600 dkk',
+    description: 'Almindelige striber vi laver hele året.',
+    features: [
+    '100 min.',
+    'Konsultasion af ønsker', 
     'Styling'
     ],
     mostPopular: false,
   },
   {
-    name: 'Speciel striber',
+    name: 'Speciel striber!',
     id: 'tier-freelancer',
     href: '#',
-    price: '475 dkk',
-    description: 'Den mest essentielle klip af dit hår.',
-    features: ['Konsultasion af ønsker', 
-    'Vask af hår', 
-    'Saks eller maskin', 
-    'Styling'
-    ],
-    mostPopular: false,
-  },
-  {
-    name: 'Max (Taylors)',
-    id: 'tier-freelancer',
-    href: '#',
-    price: '475 dkk',
-    description: 'Den mest essentielle klip af dit hår.',
-    features: ['Konsultasion af ønsker', 
-    'Vask af hår', 
-    'Saks eller maskin', 
+    price: '2200 dkk',
+    description: 'Alt fra Babylights, Ombre, Balayage og andre langtids farvebehandlinger med toninger.',
+    features: [
+    '180 min.',
+    'Konsultasion af ønsker',  
     'Styling'
     ],
     mostPopular: false,
@@ -166,7 +154,7 @@ export default function Example() {
           </p>
         </div>
         <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-300">
-          Velg den som passer deg og dine behov best.
+          Vælg lige den type klipning som passer dig og dine behov best.
         </p>
         <div className="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {tiers.map((tier) => (
