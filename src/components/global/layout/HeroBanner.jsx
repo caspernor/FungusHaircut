@@ -6,7 +6,7 @@ export const HeroBanner = () => {
     return (
         <div className="relative isolate overflow-hidden pt-14">
         <img
-          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
+          src="Fungus-outside-1-bg.jpg"
           alt=""
           className="absolute inset-0 -z-10 h-full w-full object-cover"
         />
@@ -24,9 +24,9 @@ export const HeroBanner = () => {
         </div>
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
+            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-cream ring-1 ring-white/10 hover:ring-white/20">
               Få vejvisning til salonen her.{' '}
-              <a href="https://goo.gl/maps/rUeyLt64drhZN4UL7" className="font-semibold text-white">
+              <a href="https://goo.gl/maps/rUeyLt64drhZN4UL7" className="font-semibold text-light">
                 <span className="absolute inset-0" aria-hidden="true" />
                 Google Maps <span aria-hidden="true">&rarr;</span>
               </a>
@@ -36,7 +36,7 @@ export const HeroBanner = () => {
             <h1 className="text-4xl font-bold tracking-tight text-light sm:text-6xl">
               Fungus Haircut
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
+            <p className="mt-6 text-lg leading-8 text-cream">
               Vi tilbyder alt fra alminnelig klip, til styling, farvning og hårprodukter.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -47,7 +47,7 @@ export const HeroBanner = () => {
               >
                 Book time
               </a>
-              <a href="/prices" className="text-sm font-semibold leading-6 text-white">
+              <a href="/prices" className="text-sm font-semibold leading-6 text-cream">
                 Priser <span aria-hidden="true">→</span>
               </a>
             </div>

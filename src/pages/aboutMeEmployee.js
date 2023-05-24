@@ -31,7 +31,7 @@ export default function Example() {
             </div>
           </div>
           <img
-            src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.6435-9/123512711_843279483097862_78467846047393708_n.png?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=FGin6802zjMAX_3Jb5x&_nc_ht=scontent-arn2-1.xx&oh=00_AfCfS_P1G8MoOtLlrcZPjOKWapLTRsRqhiiEydQldwjfdQ&oe=648EFC51"
+            src="/Fungus-karim-1.jpg"
             alt="Product screenshot"
             className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
             width={2432}
