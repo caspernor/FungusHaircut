@@ -1,8 +1,13 @@
 
 const features = [
   {
-    description:
-      ' *Placeholder text* Karim, en dygtig frisør med 12 års erfaring, har for nylig åbnet sin egen frisørsalon i Elmegade. Efter mange års hårdt arbejde har Karim udviklet sig fra en lille kundebase til at blive anerkendt og efterspurgt i branchen. Karims rejse begyndte for 12 år siden, da han startede som lærling. Han har siden dedikeret sig til at perfektionere sit håndværk og skabe unikke frisurer, der fremhæver kundernes skønhed og stil. Med sin professionalisme og dedikation vandt Karim hurtigt tilliden hos sine første kunder. Mens Karim opbyggede sin kundebase, begyndte han at udforske forskellige frisørstile og trends. Han deltog i workshops, seminarer og konkurrencer for at holde sig opdateret med de nyeste teknikker og metoder. Denne konstante læring hjalp med at forbedre hans færdigheder og gjorde ham eftertragtet som frisør.',
+    description: [
+      ' Hår er blevet min livsstil. Mit arbejde som frisør betyder alt for mig, og mange af mine fritidsinteresser er relateret til mit fag. Jeg besøger London hvert år for at finde inspiration og undergrundstendenser til min profession. Musik spiller også en stor rolle i mit liv, da det er forbundet med følelser, hår og mode. Som ung begyndte jeg at klippe mine venner og opdagede min naturlige talent for det. Efter forskellige jobmuligheder fandt jeg min vej ind i frisørfaget og har nu været frisør i 28 år. For 15 år siden åbnede jeg min egen salon, hvor jeg fortsætter med at udleve min passion for håret.',
+      ' Min dag som frisør er fyldt med klipning, lidt regnskab og personlige interaktioner. Jeg bruger en del tid på at forbedre mine færdigheder gennem shows, billedmateriale og undervisning. Mit fokus er at arbejde med hårets struktur og vejlede mine kunder, så de kan få det bedste ud af deres hår med minimal indsats. Jeg lægger ikke så meget vægt på styling efter en klipning, da håret skal kunne se godt ud selv med en simpel føntørring. Som frisør er jeg altid til eksamen, da mine kunders tilfredshed er afgørende for mig. Jeg undgår at arbejde med noget, jeg ikke føler mig kompetent til, og har taget det som en personlig udfordring at blive bedre til at lave håropsætninger på langt hår.', 
+      ' Jeg er fra Nørrebro, arbejder på Nørrebro og vil forlade verden fra Nørrebro. Det er her, jeg hører til. Min gamle læremester anbefalede mig at åbne min salon på Elmegade, hvor det føles som en landsby. Folk hilser på hinanden, og folk kigger ind i salonen for en sludder. Min salon er lille, hvilket giver mig mulighed for intime samtaler med mine kunder. Jeg har kunder fra alle samfundslag og vi snakker om psykologi og livets udfordringer. Jeg elsker at lytte til deres historier. Selvom nogle siger, at man ikke skal diskutere politik med sin frisør, så gør jeg det gerne. Det er sjovt, selvom vi er uenige.',
+      ' Hvis jeg skulle lave det samme på alle kunder, ville jeg blive træt af det. Jeg kalder det samlebåndsarbejde. Lige nu har jeg overskud til at fortsætte med at videreuddanne mig, og det er derfor jeg kan holde ud at arbejde som frisør. Men når jeg ikke længere udvikler mig som frisør, vil jeg hellere fokusere mere på menneskers indre end deres ydre. Det har altid fascineret mig. Jeg har en svaghed for dem, der har det svært. Selvom jeg nok er for dum til at blive psykolog, kan jeg blive psykoterapeut eller stresscoach eller noget, der kan hjælpe folk og gøre dem gladere. Det kan sagtens kombineres med at være frisør.',
+      ' At være frisør er ikke bare et job for mig. Jeg arbejder med noget levende og skaber noget. Det er et håndværk, men det handler ikke kun om at tjene penge. For mig er det mere en hobby, og jeg føler mig meget privilegeret. Jeg er glad, når jeg går på arbejde, og efter 10 dages ferie glæder jeg mig utroligt meget til at komme tilbage. Jeg elsker mit arbejde, og det gør mig virkelig lykkelig. Jeg kan ikke forestille mig, hvordan man kan overleve i 28 år, hvis man ikke trives med det, man laver. Det må være forfærdeligt.'
+    ]
   },
 ]
 
@@ -14,9 +19,9 @@ export default function Example() {
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
               <h2 className="text-base font-semibold leading-7 text-light">Om mig:</h2>
-              <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Karim Fungus</p>
+              <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Karim Belkhelfa</p>
               <p className="mt-6 text-lg leading-8 text-gray-300">
-              Midt navn er Karim og jeg arbejder i min egen frisørsalon "Fungus Haircut" som ligger i Elmegade.
+              Mit navn er Karim og jeg arbejder i min egen frisørsalon "Fungus" som ligger her i Elmegade.
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-300 lg:max-w-none">
                 {features.map((feature) => (
