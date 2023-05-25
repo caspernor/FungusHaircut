@@ -1,19 +1,25 @@
 import { Fragment, useEffect, useRef, useState } from "react";
-import { Dialog, Transition } from "@headlessui/react";
+import { Dialog, RadioGroup, Transition } from "@headlessui/react";
 import { CheckIcon } from "@heroicons/react/24/outline";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
+import clsx from "clsx";
 
 export default function ExampleModal({ open, handleClose }) {
   const cancelButtonRef = useRef(null);
   const [date, setDate] = useState("");
+  const [dateTime, setDateTime] = useState("");
+  const [openings, setOpenings] = useState([]);
+
+  const OPENINGS = ["10:00", "10:30", "11:00", "11:30", "12:00",
+                    "12:30", "13:00", "13:30", "14:00", "14:30",
+                    "15:00", "15:30", "16:00", "16:30", "17:00",
+                    "17:30", 
+];
 
   const checkAvailability = async () => {
     if (!date.$y) return;
-    const response = await fetch(
-      `/flask/timeslot/${date.$y}-${date.$M + 1}-${date.$D}`
-    );
-
-    console.log(response);
+    /* fetch data her */
+    setOpenings(OPENINGS);
   };
 
   useEffect(() => {
@@ -74,15 +80,55 @@ export default function ExampleModal({ open, handleClose }) {
                         onChange={(newDate) => setDate(newDate)}
                       />
                     </div>
+                    {/* TODO: Gjør dette til selectable chips */}
+                    <div className="flex items-center justify-between mt-6">
+                      <h2 className="text-sm font-medium leading-6 text-gray-900">
+                        Velg tidspunkt
+                      </h2>
+                    </div>
+                    <RadioGroup
+                      value={dateTime}
+                      onChange={setDateTime}
+                      className="mt-2"
+                    >
+                      <RadioGroup.Label className="sr-only">
+                        Velg tidspunkt
+                      </RadioGroup.Label>
+
+                      <div className="grid grid-cols-3 gap-3 sm:grid-cols-6">
+                        {openings.length > 0 &&
+                          openings.map((opening, index) => (
+                            <RadioGroup.Option
+                              key={index}
+                              value={opening}
+                              className={({ active, checked }) =>
+                                clsx(
+                                  active
+                                    ? "ring-2 ring-light ring-offset-2"
+                                    : "",
+                                  checked
+                                    ? "bg-light text-black hover:bg-cream"
+                                    : "ring-1 ring-inset ring-gray-300 bg-white text-gray-900 hover:bg-gray-50",
+                                  "flex items-center justify-center rounded-md py-3 px-3 text-sm font-semibold uppercase sm:flex-1"
+                                )
+                              }
+                            >
+                              <RadioGroup.Label as="span">
+                                {opening}
+                              </RadioGroup.Label>
+                            </RadioGroup.Option>
+                          ))}
+                      </div>
+                    </RadioGroup>
                   </div>
                 </div>
                 <div className="mt-5 sm:mt-6 sm:grid sm:grid-flow-row-dense sm:grid-cols-2 sm:gap-3">
                   <button
                     type="button"
-                    className="inline-flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:col-start-2"
+                    className="inline-flex w-full justify-center rounded-md bg-light px-3 py-2 text-sm font-semibold text-black shadow-sm hover:bg-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light sm:col-start-2"
                     onClick={() => setOpen(false)}
                   >
-                    Deactivate
+                    Book tid
                   </button>
                   <button
                     type="button"
@@ -90,7 +136,7 @@ export default function ExampleModal({ open, handleClose }) {
                     onClick={() => setOpen(false)}
                     ref={cancelButtonRef}
                   >
-                    Cancel
+                    Tilbage
                   </button>
                 </div>
               </Dialog.Panel>
