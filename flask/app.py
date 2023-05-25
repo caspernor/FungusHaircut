@@ -16,7 +16,7 @@ class Booking(db.Model):
 
 @app.route('/', methods=['GET'])
 def getIndex():
-    return 'Horebukk'
+    return 'Hejhej Backend'
 
 @app.route('/booking', methods=['POST'])
 def booking():
@@ -41,8 +41,6 @@ def getAvailableTimeslots(date):
     available_timeslots = [slot for slot in AVAILABLE_TIME_SLOTS if slot not in booked_timeslots]
 
     return {'available_timeslots': available_timeslots}
-
-
 
 if __name__ == '__main__':
     app.run(debug=True)
