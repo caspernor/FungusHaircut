@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 export default async function handler(req, res) {
   const googlePlaceId = "ChIJi5a4zd9QWARADhjzldYQRy4";
   const googlePlacesKey = process.env.API_KEY;
