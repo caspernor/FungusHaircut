@@ -145,7 +145,13 @@ function classNames(...classes) {
 export default function Example() {
 
   return (
-    <div className="bg-gray-900 py-24 sm:py-32">
+    <div className="relative isolate overflow-hidden pt-14">
+      <img
+        src="orange-bg.jpeg"
+        alt=""
+        className="absolute inset-0 -z-10 h-full w-full object-cover"
+
+      />
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-base font-semibold leading-7 text-light">Priser</h2>
