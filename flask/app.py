@@ -14,6 +14,10 @@ class Booking(db.Model):
     customer_phone = db.Column(db.String(20))
     date = db.Column(db.DateTime)
 
+@app.route('/', methods=['GET'])
+def getIndex():
+    return 'Horebukk'
+
 @app.route('/booking', methods=['POST'])
 def booking():
     customer_name = request.form.get('customer_name')
@@ -26,6 +30,19 @@ def booking():
     db.session.commit()
 
     return 'Booking successful!'
+
+AVAILABLE_TIME_SLOTS = ['09:00', '09:30', '10:00', '11:00']
+
+@app.route('/timeslot/<date>', methods=['GET'])
+def getAvailableTimeslots(date):
+    requested_date = datetime.strptime(date, "%Y-%m-%d")
+    bookings_on_date = Booking.query.filter(db.func.date(Booking.date) == requested_date.date()).all()
+    booked_timeslots = [booking.date.strftime("%H:%M") for booking in bookings_on_date]
+    available_timeslots = [slot for slot in AVAILABLE_TIME_SLOTS if slot not in booked_timeslots]
+
+    return {'available_timeslots': available_timeslots}
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
