@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "proxy": "http://localhost:5000",
+    "proxy": "http://127.0.0.1:5000",
     "start-backend": "cd flask && env/bin/flask run --no-debugger"
   },
   "dependencies": {
@@ -19,6 +19,7 @@
     "@mui/material": "^5.13.2",
     "@mui/x-date-pickers": "^6.5.0",
     "autoprefixer": "10.4.14",
+    "clsx": "^1.2.1",
     "date-fns": "^2.30.0",
     "dayjs": "^1.11.7",
     "eslint": "8.40.0",
