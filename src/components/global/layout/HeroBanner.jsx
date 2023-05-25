@@ -9,6 +9,7 @@ export const HeroBanner = () => {
           src="Fungus-outside-1-bg.jpg"
           alt=""
           className="absolute inset-0 -z-10 h-full w-full object-cover"
+
         />
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -25,7 +26,7 @@ export const HeroBanner = () => {
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-cream ring-1 ring-white/10 hover:ring-white/20">
-              Få vejvisning til salonen her.{' '}
+              Få vist vejen til salonen her.{' '}
               <a href="https://goo.gl/maps/rUeyLt64drhZN4UL7" className="font-semibold text-light">
                 <span className="absolute inset-0" aria-hidden="true" />
                 Google Maps <span aria-hidden="true">&rarr;</span>
@@ -37,7 +38,7 @@ export const HeroBanner = () => {
               Fungus Haircut
             </h1>
             <p className="mt-6 text-lg leading-8 text-cream">
-              Vi tilbyder alt fra alminnelig klip, til styling, farvning og hårprodukter.
+              Vi tilbyder alt fra alminnelig klip til styling, farvning og hårprodukter.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
@@ -45,7 +46,7 @@ export const HeroBanner = () => {
                 className="rounded-md bg-light px-3.5 py-2.5 text-sm font-semibold text-dark shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
                 onClick={handleOnClick}
               >
-                Book time
+                Book tid
               </a>
               <a href="/prices" className="text-sm font-semibold leading-6 text-cream">
                 Priser <span aria-hidden="true">→</span>

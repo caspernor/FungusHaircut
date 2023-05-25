@@ -35,7 +35,7 @@ const tiers = [
     name: 'Junior-klip',
     id: 'tier-enterprise',
     href: '#',
-    price: '400 dkk',
+    price: '400 kr',
     description: 'For børn mellem 10-16 år.',
     features: [
     '40 min.', 
@@ -49,8 +49,8 @@ const tiers = [
     name: 'Børne-klip',
     id: 'tier-freelancer',
     href: '#',
-    price: '350 dkk',
-    description: 'Den mest essentielle klip for dit barn.',
+    price: '350 kr',
+    description: 'For børn fra 3-10 år',
     features: [
     '30 min.', 
     'Vask af hår', 
@@ -62,7 +62,7 @@ const tiers = [
     name: 'Satelit-klip',
     id: 'tier-freelancer',
     href: '#',
-    price: '375 dkk',
+    price: '375 kr',
     description: 'Hvis du ikke har så meget hår eller er tyndhåret',
     features: [
     '35 min.', 
@@ -75,7 +75,7 @@ const tiers = [
     name: 'Farvning',
     id: 'tier-freelancer',
     href: '#',
-    price: '475 dkk',
+    price: '475 kr',
     description: 'Almindelig farvning af dit hår.',
     features: [
     '80 min.', 
@@ -88,7 +88,7 @@ const tiers = [
     name: 'Kam striber',
     id: 'tier-freelancer',
     href: '#',
-    price: '400 dkk',
+    price: '400 kr',
     description: 'En let måde at få solstrejf i det mørke vinterhår',
     features: [
     '30 min.',
@@ -101,7 +101,7 @@ const tiers = [
     name: 'Top striber',
     id: 'tier-freelancer',
     href: '#',
-    price: '900 dkk',
+    price: '900 kr',
     description: 'Striber fra tændning til tændning, i det halve hår.',
     features: [
     '85 min.',
@@ -114,7 +114,7 @@ const tiers = [
     name: 'Alm. fuld striber',
     id: 'tier-freelancer',
     href: '#',
-    price: '1600 dkk',
+    price: '1600 kr',
     description: 'Almindelige striber vi laver hele året.',
     features: [
     '100 min.',
@@ -127,7 +127,7 @@ const tiers = [
     name: 'Speciel striber!',
     id: 'tier-freelancer',
     href: '#',
-    price: '2200 dkk',
+    price: '2200 kr',
     description: 'Alt fra Babylights, Ombre, Balayage og andre langtids farvebehandlinger med toninger.',
     features: [
     '180 min.',
@@ -191,7 +191,7 @@ export default function Example() {
                   'mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2'
                 )}
               >
-                Book time
+                Book en tid
               </a>
               <ul role="list" className="mt-8 space-y-3 text-sm leading-6 text-gray-300 xl:mt-10">
                 {tier.features.map((feature) => (
