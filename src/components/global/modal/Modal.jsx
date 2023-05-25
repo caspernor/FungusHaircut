@@ -9,6 +9,7 @@ export default function ExampleModal({ open, handleClose }) {
   const [date, setDate] = useState("");
   const [dateTime, setDateTime] = useState("");
   const [openings, setOpenings] = useState([]);
+  
 
   const OPENINGS = ["10:00", "10:30", "11:00", "11:30", "12:00",
                     "12:30", "13:00", "13:30", "14:00", "14:30",
@@ -21,6 +22,14 @@ export default function ExampleModal({ open, handleClose }) {
     /* fetch data her */
     setOpenings(OPENINGS);
   };
+  
+  /*
+  const handleBookedTime = () => {
+    const alertMessage = "Du har booket tiden" ${setDate} "kl." ${setTime};
+    alert(alertMessage);
+  } 
+
+  */
 
   useEffect(() => {
     console.log(date.$d);
@@ -126,7 +135,7 @@ export default function ExampleModal({ open, handleClose }) {
                   <button
                     type="button"
                     className="inline-flex w-full justify-center rounded-md bg-light px-3 py-2 text-sm font-semibold text-black shadow-sm hover:bg-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light sm:col-start-2"
-                    onClick={() => setOpen(false)}
+                    onClick={() => handleBookedTime}
                   >
                     Book tid
                   </button>
