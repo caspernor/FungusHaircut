@@ -1,16 +1,33 @@
 export default function Example() {
     return (
-     <div className="bg-gray-900 py-24 sm:py-32">
+
+     <div className="bg-gray-900 py-24 sm:py-32 md:py-40 lg:py-48 xl:py-56">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
             <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3">
               <div>
                 <h2 className="text-3xl font-bold tracking-tight text-light">Get in touch</h2>
                 <p className="mt-4 leading-7 text-white">
-                Kontakt os på telefon for bookning eller andre henvendelser. 
-                Book gerne en tid via. bookingsystemet øverst til højre
+                Kontakt os på telefon for booking eller andre henvendelser. 
+                Book gerne en tid via bookingsystemet.
                 </p>
               </div>
+              <div>
+
+                <h2 className="text-1xl font-bold tracking-tight text-light">Åbningstider:</h2>
+                  <div className="mt-4 text-lg text-white font-bold tracking-tight">
+                    
+                   <p className="mb-2">Mandag <span className="font-semibold ml-5">10:00-18:00</span><br /></p>
+                   <p className="mb-2">Tirsdag <span className="font-semibold ml-7">10:00-18:00</span><br /></p>
+                   <p className="mb-2">Onsdag <span className="font-semibold ml-7">Lukket</span><br /></p>
+                   <p className="mb-2">Torsdag <span className="font-semibold ml-6">10:00-18:00</span><br /></p>
+                   <p className="mb-2">Fredag <span className="font-semibold ml-8">10:00-19:00</span><br /></p>
+                   <p className="mb-2">Lørdag <span className="font-semibold ml-8">10:00-14:00</span><br /></p>
+                   <p className="mb-2">Søndag <span className="font-semibold ml-7">Lukket</span><br /></p>
+
+              </div>
+              </div>
+
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
                 <div className="rounded-2xl bg-gray-50 p-10">
                   <h3 className="text-base font-semibold leading-7 text-gray-900">Telefon</h3>
@@ -18,7 +35,6 @@ export default function Example() {
                     <div className="mt-1">
                       <dt className="sr-only">Phone number</dt>
                       <dd>+45 35 36 34 31</dd>
-                      
                     </div>
                   </dl>
                 </div>
@@ -52,6 +68,7 @@ export default function Example() {
           </div>
         </div>
       </div>
+  
     )
   }
   
