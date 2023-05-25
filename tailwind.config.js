@@ -15,7 +15,7 @@ module.exports = {
 
         **/
         light: '#FFCC99',
-        cream: '#fbfae5',
+        cream: '#fdf8dd',
         greydark: '#423D3D',
       },
     },
