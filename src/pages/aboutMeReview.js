@@ -31,13 +31,10 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <div className="relative isolate overflow-hidden pt-14">
-      <img
-        src="orange-bg.jpeg"
-        alt=""
-        className="absolute inset-0 -z-10 h-full w-full object-cover"
-
-      />
+      <div className="relative bg-orangesmash py-24 sm:py-32">
+      <div className="absolute inset-0 mt-16 mx-4 mb-4 border-8 rounded-xl border-cream" />
+      <div className="absolute inset-6 mt-16 mx-4 mb-4 border-4 rounded-xl border-cream opacity-70" />
+      <div className="absolute inset-12 mt-16 mx-4 mb-4 border-2 rounded-xl border-cream opacity-40" />
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:grid lg:max-w-7xl lg:grid-cols-12 lg:gap-x-8 lg:px-8 lg:py-32">
         <div className="lg:col-span-4">
           <h2 className="text-2xl font-bold tracking-tight text-gray-900">Customer Reviews</h2>

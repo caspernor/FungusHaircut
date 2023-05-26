@@ -2,14 +2,11 @@ import Calendar from "@/components/booking/Calendar";
 
 export default function Booking () {
     return (
-    <div className="flex justify-center relative isolate overflow-hidden pt-14">
-      <img
-        src="orange-bg.jpeg"
-        alt=""
-        className="absolute inset-0 -z-10 h-full w-full object-cover"
-
-      />
-            <div className="max-w-7xl bg-gray-200 shadow rounded-lg">
+    <div className="relative bg-orangesmash py-24 sm:py-32">
+    <div className="absolute inset-0 mt-16 mx-4 mb-4 border-8 rounded-xl border-cream" />
+    <div className="absolute inset-6 mt-16 mx-4 mb-4 border-4 rounded-xl border-cream opacity-70" />
+    <div className="absolute inset-12 mt-16 mx-4 mb-4 border-2 rounded-xl border-cream opacity-40" />
+            <div className="max-w-7xl bg-cream shadow rounded-lg">
                 <Calendar />
             </div>
         </div>

@@ -23,13 +23,15 @@ export default function ExampleModal({ open, handleClose }) {
     setOpenings(OPENINGS);
   };
   
-  /*
+
   const handleBookedTime = () => {
-    const alertMessage = "Du har booket tiden" ${setDate} "kl." ${setTime};
+    const alertMessage = `Du har booket tiden ${date} kl. ${dateTime}`;
     alert(alertMessage);
   } 
+  useEffect(() => {
+    
+  }, [dateTime]);
 
-  */
 
   useEffect(() => {
     console.log(date.$d);
@@ -135,7 +137,7 @@ export default function ExampleModal({ open, handleClose }) {
                   <button
                     type="button"
                     className="inline-flex w-full justify-center rounded-md bg-light px-3 py-2 text-sm font-semibold text-black shadow-sm hover:bg-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light sm:col-start-2"
-                    onClick={() => handleBookedTime}
+                    onClick={() => handleBookedTime()}
                   >
                     Book tid
                   </button>

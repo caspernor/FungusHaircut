@@ -27,7 +27,7 @@ export const HeroBanner = () => {
             </div>
           </div>
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-light sm:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-orangesmash sm:text-6xl">
               Fungus Haircut
             </h1>
             <p className="mt-6 text-lg leading-8 text-cream">
@@ -36,7 +36,7 @@ export const HeroBanner = () => {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="/booking"
-                className="rounded-md bg-light px-3.5 py-2.5 text-sm font-semibold text-dark shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                className="rounded-md bg-orangesmash px-3.5 py-2.5 text-sm font-semibold text-dark shadow-sm hover:bg-orangedark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-greydark"
                 onClick={handleOnClick}
               >
                 Book tid

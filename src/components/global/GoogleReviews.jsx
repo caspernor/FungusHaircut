@@ -20,10 +20,13 @@ export default function GoogleReviews() {
   console.log(reviews);
 
   return (
-    <div className="mb-8 mx-4 flex justify-center">
+      <div className="relative bg-orangesmash py-24 sm:py-32">
+      <div className="absolute inset-0 mt-16 mx-4 mb-4 border-8 rounded-xl border-cream" />
+      <div className="absolute inset-6 mt-16 mx-4 mb-4 border-4 rounded-xl border-cream opacity-70" />
+      <div className="absolute inset-12 mt-16 mx-4 mb-4 border-2 rounded-xl border-cream opacity-40" />
       <div className="max-w-7xl">
         <div className="flow-root">
-          <ul role="list" className="-mb-8">
+          <ul role="list" className="-mb-8 mx-20 mt-14">
             {reviews.map((review) => (
               <li key={`${review.author_name}-${review.time}`}>
                 <div className="relative pb-8">
