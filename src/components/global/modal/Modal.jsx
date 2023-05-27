@@ -8,30 +8,72 @@ export default function ExampleModal({ open, handleClose }) {
   const cancelButtonRef = useRef(null);
   const [date, setDate] = useState("");
   const [dateTime, setDateTime] = useState("");
-  const [openings, setOpenings] = useState([]);
-  
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
 
-  const OPENINGS = ["10:00", "10:30", "11:00", "11:30", "12:00",
-                    "12:30", "13:00", "13:30", "14:00", "14:30",
-                    "15:00", "15:30", "16:00", "16:30", "17:00",
-                    "17:30", 
-];
+
+  const [bookingData, setBookingData] = useState([]);
+
+  const fetchAvailability = async () => {
+    try {
+      const year = date.$d.getFullYear();
+      const month = String(date.$d.getMonth() + 1).padStart(2, '0'); // Months are zero-based, so adding 1 and padding with leading zeros
+      const day = String(date.$d.getDate()).padStart(2, '0'); // Padding the day with leading zeros
+
+      const response = await fetch(`http://127.0.0.1:5000/timeslot/${year}-${month}-${day}`);
+      const data = await response.json();
+      setBookingData(data.available_timeslots);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
+
+  const handleBookingSubmit = async () => {
+    const bookingData = {
+      date,
+      time: dateTime,
+      name,
+      email
+    };
+    
+    try {
+      const response = await fetch('http://127.0.0.1:5000/booking', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(bookingData)
+      });
+      
+      if (response.ok) {
+        console.log('Booking successful!');
+        // Handle success or redirect to another page
+      } else {
+        console.error('Booking failed!');
+        // Handle error
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      // Handle error
+    }
+  };
 
   const checkAvailability = async () => {
+    console.log(date)
     if (!date.$y) return;
     /* fetch data her */
-    setOpenings(OPENINGS);
+    fetchAvailability();
   };
-  
+
+  useEffect(() => {
+    console.log(bookingData)
+  }, [bookingData])
 
   const handleBookedTime = () => {
     const alertMessage = `Du har booket tiden ${date} kl. ${dateTime}`;
     alert(alertMessage);
-  } 
-  useEffect(() => {
-    
-  }, [dateTime]);
-
+  };
+  useEffect(() => {}, [dateTime]);
 
   useEffect(() => {
     console.log(date.$d);
@@ -91,6 +133,7 @@ export default function ExampleModal({ open, handleClose }) {
                         onChange={(newDate) => setDate(newDate)}
                       />
                     </div>
+                    
                     {/* TODO: Gjør dette til selectable chips */}
                     <div className="flex items-center justify-between mt-6">
                       <h2 className="text-sm font-medium leading-6 text-gray-900">
@@ -107,8 +150,8 @@ export default function ExampleModal({ open, handleClose }) {
                       </RadioGroup.Label>
 
                       <div className="grid grid-cols-3 gap-3 sm:grid-cols-6">
-                        {openings.length > 0 &&
-                          openings.map((opening, index) => (
+                        {bookingData.length > 0 &&
+                          bookingData.map((opening, index) => (
                             <RadioGroup.Option
                               key={index}
                               value={opening}
@@ -120,7 +163,7 @@ export default function ExampleModal({ open, handleClose }) {
                                   checked
                                     ? "bg-light text-black hover:bg-cream"
                                     : "ring-1 ring-inset ring-gray-300 bg-white text-gray-900 hover:bg-gray-50",
-                                  "flex items-center justify-center rounded-md py-3 px-3 text-sm font-semibold uppercase sm:flex-1"
+                                  "flex items-center justify-center rounded-md py-3 px-3 text-sm font-semibold uppercase sm:flex-1 cursor-pointer	"
                                 )
                               }
                             >
@@ -131,13 +174,54 @@ export default function ExampleModal({ open, handleClose }) {
                           ))}
                       </div>
                     </RadioGroup>
+                    <div className="">
+                      <label htmlFor="name" className="block text-sm font-medium leading-6 text-gray-900">
+                        Namn
+                      </label>
+                      <div className="mt-2">
+                        <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+                          <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            autoComplete="name"
+                            className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                            placeholder="Petter hansen"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </div>
+                  <div className="">
+                      <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                        Email
+                      </label>
+                      <div className="mt-2">
+                        <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+                          <input
+                            type="text"
+                            name="email"
+                            id="email"
+                            autoComplete="email"
+                            className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                            placeholder="petter@hansen.dk"
+                            
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  
+                  
                 </div>
                 <div className="mt-5 sm:mt-6 sm:grid sm:grid-flow-row-dense sm:grid-cols-2 sm:gap-3">
                   <button
                     type="button"
                     className="inline-flex w-full justify-center rounded-md bg-light px-3 py-2 text-sm font-semibold text-black shadow-sm hover:bg-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light sm:col-start-2"
-                    onClick={() => handleBookedTime()}
+                    onClick={() => handleBookingSubmit()}
                   >
                     Book tid
                   </button>

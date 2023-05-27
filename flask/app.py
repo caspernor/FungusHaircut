@@ -1,13 +1,16 @@
 from flask import Flask, request
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.sqlite'
 
 db = SQLAlchemy(app)
 
 class Booking(db.Model):
+    __tablename__ = 'booking'
     id = db.Column(db.Integer, primary_key=True)
     customer_name = db.Column(db.String(50))
     customer_email = db.Column(db.String(50))
@@ -17,6 +20,21 @@ class Booking(db.Model):
 @app.route('/', methods=['GET'])
 def getIndex():
     return 'Hejhej Backend'
+
+@app.route('/bookings', methods=['GET'])
+def getBookings():
+    bookings = Booking.query.all()
+    booking_data = []
+    for booking in bookings:
+        booking_data.append({
+            'id': booking.id,
+            'customer_name': booking.customer_name,
+            'customer_email': booking.customer_email,
+            'customer_phone': booking.customer_phone,
+            'date': str(booking.date)  # Convert to string for JSON serialization
+        })
+    return {'bookings': booking_data}
+    
 
 @app.route('/booking', methods=['POST'])
 def booking():
@@ -31,7 +49,24 @@ def booking():
 
     return 'Booking successful!'
 
-AVAILABLE_TIME_SLOTS = ['09:00', '09:30', '10:00', '11:00']
+AVAILABLE_TIME_SLOTS = [
+    "10:00",
+    "10:30",
+    "11:00",
+    "11:30",
+    "12:00",
+    "12:30",
+    "13:00",
+    "13:30",
+    "14:00",
+    "14:30",
+    "15:00",
+    "15:30",
+    "16:00",
+    "16:30",
+    "17:00",
+    "17:30",
+  ]
 
 @app.route('/timeslot/<date>', methods=['GET'])
 def getAvailableTimeslots(date):

@@ -37,13 +37,6 @@ export default function GoogleReviews() {
                         src={review.profile_photo_url}
                         alt=""
                       />
-
-                      <span className="absolute -bottom-1 -right-1 rounded-tl  px-0.5 py-px">
-                        <ChatBubbleLeftEllipsisIcon
-                          className="h-5 w-5 text-white"
-                          aria-hidden="true"
-                        />
-                      </span>
                     </div>
                     <div className="min-w-0 flex-1">
                       <div>

@@ -22,6 +22,7 @@ export default function Calendar() {
   const [open, setOpen] = useState(false);
 
   const handleModalOpen = () => {
+    console.log('called')
     setOpen(true);
   };
   const handleModalClose = () => {
@@ -160,7 +161,7 @@ export default function Calendar() {
               <div className="ml-6 h-6 w-px bg-gray-300" />
               <button
                 type="button"
-                className="ml-6 rounded-md  bg-light px-3 py-2 text-sm font-semibold text-black shadow-sm hover:bg-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="ml-6 rounded-md z-50  bg-light px-3 py-2 text-sm font-semibold text-black shadow-sm hover:bg-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 onClick={handleModalOpen}
               >
                 Book tid

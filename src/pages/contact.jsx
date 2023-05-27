@@ -1,7 +1,7 @@
 export default function Example() {
     return (
 
-      <div className="relative bg-orangesmash py-24 sm:py-32">
+      <div className="relative bg-orangesmash py-24 sm:py-32 h-screen">
       <div className="absolute inset-0 mt-16 mx-4 mb-4 border-8 rounded-xl border-cream" />
       <div className="absolute inset-6 mt-16 mx-4 mb-4 border-4 rounded-xl border-cream opacity-70" />
       <div className="absolute inset-12 mt-16 mx-4 mb-4 border-2 rounded-xl border-cream opacity-40" />
@@ -18,9 +18,9 @@ export default function Example() {
            
 
               <div className="grid grid-cols-2 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
-                <div className="rounded-2xl bg-gray-50 p-10">
-                  <h3 className="text-base font-semibold leading-7 text-gray-900">Telefon</h3>
-                  <dl className="mt-3 space-y-1 text-sm leading-6 text-gray-600">
+                <div className="rounded-2xl border-2 border-gray-50 p-10">
+                  <h3 className="text-base font-semibold leading-7 text-cream">Telefon</h3>
+                  <dl className="mt-3 space-y-1 text-sm leading-6 text-white">
                     <div className="mt-1">
                       <dd>+45 35 36 34 31</dd>
                     </div>
@@ -45,9 +45,9 @@ export default function Example() {
             </div>
               </div>
               <div className="grid grid-cols-2 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
-                <div className="rounded-2xl bg-gray-50 p-10">
-                  <h3 className="text-base font-semibold leading-7 text-gray-900">Elmegade 10</h3>
-                  <address className="mt-3 space-y-1 text-sm not-italic leading-6 text-gray-600">
+                <div className="rounded-2xl border-2 border-gray-50 p-10">
+                  <h3 className="text-base font-semibold leading-7 text-cream">Elmegade 10</h3>
+                  <address className="mt-3 space-y-1 text-sm not-italic leading-6 text-white">
                     <p>2200 København N, Danmark</p>
                   </address>
                 </div>
