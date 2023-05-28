@@ -2,7 +2,7 @@
 const features = [
   {
     description: [
-      ' Som ung begyndte jeg at klippe mine venner og opdagede mit naturlige talent for det. Efter forskellige jobmuligheder fandt jeg min vej ind i frisørfaget og har nu været frisør i 28 år. For 15 år siden åbnede jeg min egen salon, hvor jeg fortsætter med at udleve min passion.',
+      'Som ung begyndte jeg at klippe mine venner og opdagede mit naturlige talent for det. Efter forskellige jobmuligheder fandt jeg min vej ind i frisørfaget og har nu været frisør i 28 år. For 15 år siden åbnede jeg min egen salon, hvor jeg fortsætter med at udleve min passion.',
       ' Hår er blevet min livsstil. Mit arbejde som frisør betyder alt for mig, og mange af mine fritidsinteresser er relateret til mit fag. Jeg rejser til udlandet hvert år for at finde inspiration og undergrunds tendenser til min profession.',
       ' Musik spiller også en stor rolle i mit liv, da det er forbundet med følelser, hår og mode.  Jeg bruger en del tid på at forbedre mine færdigheder, bl.a. gennem frisørklubben Marcel - verdens ældste frisørklub. Mit fokus er at arbejde med hårets struktur og vejlede mine kunder, så de kan få det bedste ud af deres hår med minimal indsats.',
       ' Som frisør er jeg altid til eksamen, da mine kunders tilfredshed er afgørende for mig. Jeg er fra Nørrebro, arbejder på Nørrebro og vil forlade verden fra Nørrebro. Det er her, jeg hører til. Min gamle læremester anbefalede mig at åbne salon på Elmegade, hvor det føles som en landsby. Folk hilser på hinanden, og folk kigger ind i salonen for en sludder.',
@@ -43,7 +43,7 @@ export default function Example() {
           </div>
           <img
             src="/Fungus-karim-1.jpg"
-            alt="Product screenshot"
+            alt="Karim Headshot"
             className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
             style={{width: "120%", marginTop: "150px" }}
             
