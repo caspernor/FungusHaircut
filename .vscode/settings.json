@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/76883c7a-9c9b-4d62-8a54-c338c50c74cf/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/FungusHaircut",
+    "appService.deploySubpath": "."
+}

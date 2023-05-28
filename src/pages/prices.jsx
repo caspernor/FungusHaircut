@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { RadioGroup } from '@headlessui/react'
 import { CheckIcon } from '@heroicons/react/20/solid'
+import Link from 'next/link'
 
 const tiers = [
   {
@@ -184,7 +185,7 @@ export default function Example() {
                 <span className="text-sm font-semibold leading-6 text-gray-300"></span>
               </p>
               <p className="mt-2 text-2xl font-bold leading-6 text-white">{tier.price}</p>
-              <a
+              <Link
                 href='/booking'
                 aria-describedby={tier.id}
                 className={classNames(
@@ -195,7 +196,7 @@ export default function Example() {
                 )}
               >
                 Book en tid
-              </a>
+              </Link>
               <ul role="list" className="mt-8 space-y-3 text-sm leading-6 text-cream xl:mt-10">
                 {tier.features.map((feature) => (
                   <li key={feature} className="flex gap-x-3">

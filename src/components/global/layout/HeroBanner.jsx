@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 
 export const HeroBanner = () => {
@@ -20,10 +21,10 @@ export const HeroBanner = () => {
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-cream ring-1 ring-white/10 hover:ring-white/20">
               Få vist vejen til salonen her.{' '}
-              <a href="https://goo.gl/maps/rUeyLt64drhZN4UL7" className="font-semibold text-light">
+              <Link href="https://goo.gl/maps/rUeyLt64drhZN4UL7" className="font-semibold text-light">
                 <span className="absolute inset-0" aria-hidden="true" />
                 Google Maps <span aria-hidden="true">&rarr;</span>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="text-center">
@@ -34,16 +35,16 @@ export const HeroBanner = () => {
               Vi tilbyder alt fra alminnelig klip til styling, farvning og hårprodukter.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
+              <Link
                 href="/booking"
                 className="rounded-md bg-orangesmash px-3.5 py-2.5 text-sm font-semibold text-dark shadow-sm hover:bg-orangedark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-greydark"
                 onClick={handleOnClick}
               >
                 Book tid
-              </a>
-              <a href="/prices" className="text-sm font-semibold leading-6 text-cream">
+              </Link>
+              <Link href="/prices" className="text-sm font-semibold leading-6 text-cream">
                 Priser <span aria-hidden="true">→</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
