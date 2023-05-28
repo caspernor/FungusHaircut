@@ -27,7 +27,7 @@ export default function Example() {
             <div className="lg:max-w-lg">
               <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>Karim Belkhelfa</p>
               <p className="mt-6 text-lg leading-8 text-cream" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>
-              Mit navn er Karim og jeg arbejder i min frisørsalon "Fungus" i Elmegade, København.
+              Mit navn er Karim og jeg arbejder i min frisørsalon &quotFungus&quot i Elmegade, København.
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-cream lg:max-w-none" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>
                 {features.map((feature) => (

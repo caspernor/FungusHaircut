@@ -73,6 +73,7 @@ export default function ExampleModal({ open, handleClose }) {
     const alertMessage = `Du har booket tiden ${date} kl. ${dateTime}`;
     alert(alertMessage);
   };
+  
   useEffect(() => {}, [dateTime]);
 
   useEffect(() => {

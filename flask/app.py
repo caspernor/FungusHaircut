@@ -5,7 +5,15 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.sqlite'
+
+server = 'fungusbooking.database.windows.net'
+database = 'FungusBooking'
+username = 'CloudSA80f32b97'
+password = 'Fungushaircut100'
+driver = '{ODBC Driver 17 for SQL Server}'  # Update the driver based on your system
+
+app.config['SQLALCHEMY_DATABASE_URI'] = f"mssql+pymssql://{username}:{password}@{server}/{database}?driver={driver}"
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 
