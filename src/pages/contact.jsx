@@ -53,6 +53,25 @@ export default function Example() {
                 </div>
               </div>
             </div>
+            <div className="grid grid-cols-1 gap-x-8 gap-y-10 pt-16 lg:grid-cols-3">
+              <div>
+                <h2 className="text-3xl font-bold tracking-tight text-cream">Åbningstider</h2>
+              </div>
+              <div>
+
+  <div className="mt-4 text-lg text-cream font-bold tracking-tight">
+    
+   <p className="mb-2 inline-block border border-white rounded-md px-2 py-1">Mandag <span className="font-semibold ml-5">10:00 - 18:00</span><br /></p>
+   <p className="mb-2 inline-block border border-white rounded-md px-2 py-1">Tirsdag <span className="font-semibold ml-7">10:00 - 18:00</span><br /></p>
+   <p className="mb-2 inline-block border border-white rounded-md px-2 py-1">Onsdag <span className="font-semibold ml-7">Lukket</span><br /></p>
+   <p className="mb-2 inline-block border border-white rounded-md px-2 py-1">Torsdag <span className="font-semibold ml-6">10:00 - 18:00</span><br /></p>
+   <p className="mb-2 inline-block border border-white rounded-md px-2 py-1">Fredag <span className="font-semibold ml-8">10:00 - 19:00</span><br /></p>
+   <p className="mb-2 inline-block border border-white rounded-md px-2 py-1">Lørdag <span className="font-semibold ml-8">10:00 - 14:00</span><br /></p>
+   <p className="mb-2 inline-block border border-white rounded-md px-2 py-1">Søndag <span className="font-semibold ml-7">Lukket</span><br /></p>
+
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
