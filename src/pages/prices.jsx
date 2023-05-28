@@ -151,12 +151,12 @@ export default function Example() {
       <div className="absolute inset-12 mt-16 mx-4 mb-4 border-2 rounded-xl border-cream opacity-40" />
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-base font-semibold leading-7 text-greydark">Priser</h2>
+          <h2 className="text-base font-semibold leading-7 text-cream">Priser</h2>
           <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">
             Prispakker på de forskellige klip
           </p>
         </div>
-        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-greydark">
+        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-cream">
           Vælg lige den type klipning som passer dig og dine behov best.
         </p>
         <div className="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
@@ -169,7 +169,7 @@ export default function Example() {
               )}
             >
               <div className="flex items-center justify-between gap-x-4">
-                <h3 id={tier.id} className="text-lg font-semibold leading-8 text-greydark">
+                <h3 id={tier.id} className="text-lg font-bold leading-8 text-cream">
                   {tier.name}
                 </h3>
                 {tier.mostPopular ? (
@@ -190,7 +190,7 @@ export default function Example() {
                 className={classNames(
                   tier.mostPopular
                     ? 'bg-indigo-500 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500'
-                    : 'bg-cream text-greydark hover:bg-white/20 focus-visible:outline-white',
+                    : 'bg-cream text-orangedark hover:bg-white/20 focus-visible:outline-white',
                   'mt-9 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2'
                 )}
               >
