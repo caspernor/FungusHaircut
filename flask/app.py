@@ -31,7 +31,7 @@ def getBookings():
             'customer_name': booking.customer_name,
             'customer_email': booking.customer_email,
             'customer_phone': booking.customer_phone,
-            'date': str(booking.date)  # Convert to string for JSON serialization
+            'date': str(booking.date)
         })
     return {'bookings': booking_data}
     
