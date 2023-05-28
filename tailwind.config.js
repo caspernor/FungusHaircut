@@ -15,10 +15,10 @@ module.exports = {
 
         **/
         light: '#FFCC99',
-        cream: '#fdf8dd',
+        cream: '#FCECD9',
         greydark: '#423D3D',
         greylight: '#949494',
-        orangesmash: '#ff9900',
+        orangesmash: '#F59300',
         orangedark: '#cc7a00',
         blacklight: '#3b3b3b',
       },

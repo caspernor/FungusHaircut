@@ -20,7 +20,7 @@ export default function ExampleModal({ open, handleClose }) {
       const month = String(date.$d.getMonth() + 1).padStart(2, '0'); // Months are zero-based, so adding 1 and padding with leading zeros
       const day = String(date.$d.getDate()).padStart(2, '0'); // Padding the day with leading zeros
 
-      const response = await fetch(`http://127.0.0.1:5000/timeslot/${year}-${month}-${day}`);
+      const response = await fetch(`https://fungusbe.azurewebsites.net/timeslot/${year}-${month}-${day}`);
       const data = await response.json();
       setBookingData(data.available_timeslots);
     } catch (error) {
@@ -37,7 +37,7 @@ export default function ExampleModal({ open, handleClose }) {
     };
     
     try {
-      const response = await fetch('http://127.0.0.1:5000/booking', {
+      const response = await fetch('https://fungusbe.azurewebsites.net/booking', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

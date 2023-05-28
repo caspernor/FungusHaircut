@@ -58,17 +58,14 @@ export default function Example() {
                 <h2 className="text-3xl font-bold tracking-tight text-white" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>Åbningstider</h2>
               </div>
               <div>
-
-  <div className="mt-4 text-lg text-cream font-bold tracking-tight">
-    
-   <p className="mb-2 inline-block border border-white rounded-md px-2 py-1" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>Mandag <span className="font-semibold ml-5">10:00 - 18:00</span><br /></p>
-   <p className="mb-2 inline-block border border-white rounded-md px-2 py-1" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>Tirsdag <span className="font-semibold ml-7">10:00 - 18:00</span><br /></p>
-   <p className="mb-2 inline-block border border-white rounded-md px-2 py-1" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>Onsdag <span className="font-semibold ml-7">Lukket</span><br /></p>
-   <p className="mb-2 inline-block border border-white rounded-md px-2 py-1" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>Torsdag <span className="font-semibold ml-6">10:00 - 18:00</span><br /></p>
-   <p className="mb-2 inline-block border border-white rounded-md px-2 py-1" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>Fredag <span className="font-semibold ml-8">10:00 - 19:00</span><br /></p>
-   <p className="mb-2 inline-block border border-white rounded-md px-2 py-1" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>Lørdag <span className="font-semibold ml-8">10:00 - 14:00</span><br /></p>
-   <p className="mb-2 inline-block border border-white rounded-md px-2 py-1" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>Søndag <span className="font-semibold ml-7">Lukket</span><br /></p>
-
+              <div className="mt-4 text-lg text-cream font-bold tracking-tight">
+                <p className="mb-2 inline-block border border-white rounded-md px-2 py-1" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>Mandag <span className="font-semibold ml-5">10:00 - 18:00</span><br /></p>
+                <p className="mb-2 inline-block border border-white rounded-md px-2 py-1" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>Tirsdag <span className="font-semibold ml-7">10:00 - 18:00</span><br /></p>
+                <p className="mb-2 inline-block border border-white rounded-md px-2 py-1" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>Onsdag <span className="font-semibold ml-7">Lukket</span><br /></p>
+                <p className="mb-2 inline-block border border-white rounded-md px-2 py-1" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>Torsdag <span className="font-semibold ml-6">10:00 - 18:00</span><br /></p>
+                <p className="mb-2 inline-block border border-white rounded-md px-2 py-1" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>Fredag <span className="font-semibold ml-8">10:00 - 19:00</span><br /></p>
+                <p className="mb-2 inline-block border border-white rounded-md px-2 py-1" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>Lørdag <span className="font-semibold ml-8">10:00 - 14:00</span><br /></p>
+                <p className="mb-2 inline-block border border-white rounded-md px-2 py-1" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>Søndag <span className="font-semibold ml-7">Lukket</span><br /></p>
                 </div>
               </div>
             </div>
