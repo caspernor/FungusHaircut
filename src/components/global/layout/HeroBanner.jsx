@@ -20,7 +20,7 @@ export const HeroBanner = () => {
         </div>
         <div className="mx-auto max-w-2xl py-96 sm:pt-80 lg:pt-[25%]">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-cream ring-1 ring-white/10 hover:ring-white/20">
+            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-cream ring-1 ring-white/10 hover:ring-white/20" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>
               Få vist vejen til salonen her.{' '}
               <Link href="https://goo.gl/maps/rUeyLt64drhZN4UL7" className="font-semibold text-light">
                 <span className="absolute inset-0" aria-hidden="true" />
@@ -29,10 +29,10 @@ export const HeroBanner = () => {
             </div>
           </div>
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-orangesmash sm:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-orangesmash sm:text-6xl" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>
               Fungus Haircut
             </h1>
-            <p className="mt-6 text-lg leading-8 text-cream">
+            <p className="mt-6 text-lg leading-8 text-cream" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>
               Vi tilbyder alt fra alminnelig klip til styling, farvning og hårprodukter.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
