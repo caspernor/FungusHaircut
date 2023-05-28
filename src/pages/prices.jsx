@@ -147,9 +147,9 @@ export default function Example() {
 
   return (
       <div className="relative bg-orangesmash py-24 sm:py-32">
-      <div className="hidden md:absolute inset-0 mt-16 mx-4 mb-4 border-8 rounded-xl border-cream" />
-      <div className="hidden md:absolute inset-6 mt-16 mx-4 mb-4 border-4 rounded-xl border-cream opacity-70" />
-      <div className="hidden md:absolute inset-12 mt-16 mx-4 mb-4 border-2 rounded-xl border-cream opacity-40" />
+      <div className="hidden-on-mobile md:absolute inset-0 mt-16 mx-4 mb-4 border-8 rounded-xl border-cream" />
+      <div className="hidden-on-mobile md:absolute inset-6 mt-16 mx-4 mb-4 border-4 rounded-xl border-cream opacity-70" />
+      <div className="hidden-on-mobile md:absolute inset-12 mt-16 mx-4 mb-4 border-2 rounded-xl border-cream opacity-40" />
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-base font-semibold leading-7 text-cream" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>Priser</h2>
