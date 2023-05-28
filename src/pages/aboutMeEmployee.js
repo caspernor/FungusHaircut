@@ -17,17 +17,17 @@ const features = [
 
 export default function Example() {
   return (
-    <div className="relative bg-orangesmash py-24 sm:py-32">
-    <div className="absolute inset-0 mt-16 mx-4 mb-4 border-8 rounded-xl border-cream" />
-    <div className="absolute inset-6 mt-16 mx-4 mb-4 border-4 rounded-xl border-cream opacity-70" />
-    <div className="absolute inset-12 mt-16 mx-4 mb-4 border-2 rounded-xl border-cream opacity-40" />
+    <div className="relative bg-orangesmash w-screen py-24 sm:py-32">
+    <div className="hidden-on-mobile md:absolute inset-0 mt-16 mx-4 mb-4 border-8 rounded-xl border-cream" />
+    <div className="hidden-on-mobile md:absolute inset-6 mt-16 mx-4 mb-4 border-4 rounded-xl border-cream opacity-70" />
+    <div className="hidden-on-mobile md:absolute inset-12 mt-16 mx-4 mb-4 border-2 rounded-xl border-cream opacity-40" />
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
               <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>Karim Belkhelfa</p>
               <p className="mt-6 text-lg leading-8 text-cream" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>
-              Mit navn er Karim og jeg arbejder i min frisørsalon &quotFungus&quot i Elmegade, København.
+              Mit navn er Karim og jeg arbejder i min frisørsalon Fungus i Elmegade, København.
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-cream lg:max-w-none" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>
                 {features.map((feature) => (
@@ -44,8 +44,8 @@ export default function Example() {
           <img
             src="/Fungus-karim-1.jpg"
             alt="Karim Headshot"
-            className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
-            style={{width: "120%", marginTop: "150px" }}
+            className="w-[48rem] max-w-100 rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+            style={{width: "120%", marginTop: "100px" }}
             
           />
         </div>

@@ -28,7 +28,7 @@ export default function Navbar() {
           <div className="flex lg:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-cream"
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
@@ -71,7 +71,7 @@ export default function Navbar() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-light hover:bg-gray-800"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-orangesmash hover:bg-gray-800"
                     >
                       {item.name}
                     </a>
@@ -80,9 +80,9 @@ export default function Navbar() {
                 <div className="py-6">
                   <Link
                     href="/booking"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-light hover:bg-gray-800"
+                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-orangesmash hover:bg-gray-800"
                   >
-                    Online booking <span aria-hidden="true">&quot;&rarr;&quot;</span>
+                    Online booking <span aria-hidden="true">&rarr;</span>
                   </Link>
                 </div>
               </div>
