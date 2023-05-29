@@ -18,7 +18,8 @@ export const HeroBanner = () => {
           aria-hidden="true"
         >
         </div>
-        <div className="mx-auto max-w-2xl py-96 sm:pt-80 lg:pt-[25%]">
+        <div className="flex flex-col items-center justify-center h-screen">
+        <div className="max-w-2xl py-96 sm:pt-80 lg:pt-[25%] mx-auto">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-cream ring-1 ring-white/10 hover:ring-white/20" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>
               Få vist vejen til salonen her.{' '}
@@ -50,5 +51,6 @@ export const HeroBanner = () => {
           </div>
         </div>
       </div>
+    </div>
     )
 }

@@ -152,7 +152,7 @@ export default function Example() {
       <div className="hidden-on-mobile md:absolute inset-12 mt-16 mx-4 mb-4 border-2 rounded-xl border-orangesmash opacity-40" />
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-base font-semibold leading-7 text-greydark" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>Priser</h2>
+          <h2 className="text-base font-semibold leading-8 text-greydark" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>Priser</h2>
           <p className="mt-2 text-4xl font-bold tracking-tight text-orangesmash sm:text-5xl" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>
             Prispakker på de forskellige klip
           </p>
