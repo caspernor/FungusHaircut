@@ -50,14 +50,14 @@ export default function Navbar() {
         </nav>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-cream px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
             <div className="flex items-center justify-between">
               <Link href="#" className="-m-1.5 p-1.5">
                 
               </Link>
               <button
                 type="button"
-                className="-m-2.5 rounded-md p-2.5 text-cream"
+                className="-m-2.5 rounded-md p-2.5 text-orangesmash"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
@@ -65,7 +65,7 @@ export default function Navbar() {
               </button>
             </div>
             <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-gray-500/25">
+              <div className="-my-6 divide-y divide-orangesmash/80">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
                     <a

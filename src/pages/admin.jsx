@@ -9,7 +9,7 @@ export default function AdminPage() {
   
     const fetchBookings = async () => {
       try {
-        const response = await fetch('https://fungusbe.azurewebsites.net/'); // Azure back-end URL her
+        const response = await fetch('https://fungusbe2.azurewebsites.net/'); // Azure back-end URL her
         const data = await response.json();
         setBookings(data);
       } catch (error) {

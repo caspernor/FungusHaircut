@@ -20,7 +20,7 @@ export default function ExampleModal({ open, handleClose }) {
       const month = String(date.$d.getMonth() + 1).padStart(2, '0');
       const day = String(date.$d.getDate()).padStart(2, '0'); 
 
-      const response = await fetch(`https://fungusbe.azurewebsites.net/timeslot/${year}-${month}-${day}`);
+      const response = await fetch(`https://fungusbe2.azurewebsites.net/timeslot/${year}-${month}-${day}`);
       const data = await response.json();
       setBookingData(data.available_timeslots);
     } catch (error) {
@@ -37,7 +37,7 @@ export default function ExampleModal({ open, handleClose }) {
     };
     
     try {
-      const response = await fetch('https://fungusbe.azurewebsites.net/booking', {
+      const response = await fetch('https://fungusbe2.azurewebsites.net/booking', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
