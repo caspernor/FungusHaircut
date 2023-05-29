@@ -8,19 +8,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        /** 
-         * Legg til de fargene du vil ha her
-
-         * blue: "#21A2B9" Dette er et eksempel
-
-        **/
         light: '#FFCC99',
-        cream: '#FCECD9',
-        greydark: '#423D3D',
-        greylight: '#949494',
-        orangesmash: '#F59300',
+        cream: '#F5E6CC',
+        greydark: '#555358',
+        greylight: '#ADABB0',
+        orangesmash: '#EC7D10',
         orangedark: '#cc7a00',
         blacklight: '#3b3b3b',
+        blackdark: '#222222',
       },
     },
   },

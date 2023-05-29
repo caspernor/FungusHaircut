@@ -37,13 +37,13 @@ export default function Navbar() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-cream">
+              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-orangesmash" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>
                 {item.name}
               </a>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <Link href="/booking" className="text-sm font-semibold leading-6 text-cream">
+            <Link href="/booking" className="text-sm font-semibold leading-6 text-orangesmash" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>
               Online booking <span aria-hidden="true">&rarr;</span>
             </Link>
           </div>

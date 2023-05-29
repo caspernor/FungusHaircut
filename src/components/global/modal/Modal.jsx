@@ -17,8 +17,8 @@ export default function ExampleModal({ open, handleClose }) {
   const fetchAvailability = async () => {
     try {
       const year = date.$d.getFullYear();
-      const month = String(date.$d.getMonth() + 1).padStart(2, '0'); // Months are zero-based, so adding 1 and padding with leading zeros
-      const day = String(date.$d.getDate()).padStart(2, '0'); // Padding the day with leading zeros
+      const month = String(date.$d.getMonth() + 1).padStart(2, '0');
+      const day = String(date.$d.getDate()).padStart(2, '0'); 
 
       const response = await fetch(`https://fungusbe.azurewebsites.net/timeslot/${year}-${month}-${day}`);
       const data = await response.json();
@@ -47,32 +47,26 @@ export default function ExampleModal({ open, handleClose }) {
       
       if (response.ok) {
         console.log('Booking successful!');
-        // Handle success or redirect to another page
+        
       } else {
         console.error('Booking failed!');
-        // Handle error
+        
       }
     } catch (error) {
       console.error('Error:', error);
-      // Handle error
+    
     }
   };
 
   const checkAvailability = async () => {
     console.log(date)
     if (!date.$y) return;
-    /* fetch data her */
     fetchAvailability();
   };
 
   useEffect(() => {
     console.log(bookingData)
   }, [bookingData])
-
-  const handleBookedTime = () => {
-    const alertMessage = `Du har booket tiden ${date} kl. ${dateTime}`;
-    alert(alertMessage);
-  };
   
   useEffect(() => {}, [dateTime]);
 
@@ -114,12 +108,6 @@ export default function ExampleModal({ open, handleClose }) {
             >
               <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6">
                 <div>
-                  {/* <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-green-100">
-                    <CheckIcon
-                      className="h-6 w-6 text-green-600"
-                      aria-hidden="true"
-                    />
-                  </div> */}
                   <div className="mt-3 text-center sm:mt-5">
                     <Dialog.Title
                       as="h3"
@@ -221,7 +209,7 @@ export default function ExampleModal({ open, handleClose }) {
                 <div className="mt-5 sm:mt-6 sm:grid sm:grid-flow-row-dense sm:grid-cols-2 sm:gap-3">
                   <button
                     type="button"
-                    className="inline-flex w-full justify-center rounded-md bg-light px-3 py-2 text-sm font-semibold text-black shadow-sm hover:bg-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light sm:col-start-2"
+                    className="inline-flex w-full justify-center rounded-md bg-orangesmash px-3 py-2 text-sm font-semibold text-black shadow-sm hover:bg-orangedark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light sm:col-start-2"
                     onClick={() => handleBookingSubmit()}
                   >
                     Book tid

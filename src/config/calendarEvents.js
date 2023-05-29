@@ -25,7 +25,7 @@ export const CalendarEvents = [
   },] },
   { date: "2023-04-26", events: [      {
     id: 1,
-    name: "Lukket:",
+    name: "Lokale lukket:",
     time: "Hele dagen",
     datetime: "2023-05-01T10:00",
   },] },
@@ -67,7 +67,7 @@ export const CalendarEvents = [
   },] },
   { date: "2023-04-30", events: [      {
     id: 1,
-    name: "Lukket:",
+    name: "Lokale lukket:",
     time: "Hele dagen",
     datetime: "2023-05-01T10:00",
   }] },
@@ -103,7 +103,7 @@ export const CalendarEvents = [
   },] },
   { date: "2023-05-03", isCurrentMonth: true, events: [      {
     id: 1,
-    name: "Lukket:",
+    name: "Lokale lukket:",
     time: "Hele dagen",
     datetime: "2023-05-01T10:00",
   },] },
@@ -150,7 +150,7 @@ export const CalendarEvents = [
   },
   { date: "2023-05-07", isCurrentMonth: true, events: [      {
     id: 1,
-    name: "Lukket:",
+    name: "Lokale lukket:",
     time: "Hele dagen",
     datetime: "2023-05-01T10:00",
   }] 
@@ -185,8 +185,8 @@ export const CalendarEvents = [
     events: [
       {
         id: 6,
-        name: "Sam's birthday party",
-        time: "2PM",
+        name: "Lokale lukket:",
+        time: "Hele dagen",
         datetime: "2023-05-10T14:00",
         href: "#",
       },
@@ -230,7 +230,7 @@ export const CalendarEvents = [
   },] },
   { date: "2023-05-14", isCurrentMonth: true, events: [      {
     id: 1,
-    name: "Lukket:",
+    name: "Lokale lukket:",
     time: "Hele dagen",
     datetime: "2023-05-01T10:00",
   }]  },
@@ -260,7 +260,7 @@ export const CalendarEvents = [
   },] },
   { date: "2023-05-17", isCurrentMonth: true, events: [      {
     id: 1,
-    name: "Lukket:",
+    name: "Lokale lukket:",
     time: "Hele dagen",
     datetime: "2023-05-01T10:00",
   }]  },
@@ -308,7 +308,7 @@ export const CalendarEvents = [
   },
   { date: "2023-05-21", isCurrentMonth: true, events: [      {
     id: 1,
-    name: "Lukket:",
+    name: "Lokale lukket:",
     time: "Hele dagen",
     datetime: "2023-05-01T10:00",
   }]  },
@@ -338,7 +338,7 @@ export const CalendarEvents = [
   },] },
   { date: "2023-05-24", isCurrentMonth: true, events: [      {
     id: 1,
-    name: "Lukket:",
+    name: "Lokale lukket:",
     time: "Hele dagen",
     datetime: "2023-05-01T10:00",
   }]  },
@@ -380,7 +380,7 @@ export const CalendarEvents = [
   },] },
   { date: "2023-05-28", isCurrentMonth: true, events: [      {
     id: 1,
-    name: "Lukket:",
+    name: "Lokale lukket:",
     time: "Hele dagen",
     datetime: "2023-05-01T10:00",
   }]  },
@@ -410,7 +410,7 @@ export const CalendarEvents = [
   },] },
   { date: "2023-05-31", events: [      {
     id: 1,
-    name: "Lukket:",
+    name: "Lokale lukket:",
     time: "Hele dagen",
     datetime: "2023-05-01T10:00",
   }]  },
@@ -457,7 +457,7 @@ export const CalendarEvents = [
   },] },
   { date: "2023-06-04", events: [      {
     id: 1,
-    name: "Lukket:",
+    name: "Lokale lukket:",
     time: "Hele dagen",
     datetime: "2023-05-01T10:00",
   }]  },

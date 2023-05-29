@@ -53,7 +53,7 @@ export default function Calendar() {
             <div className="hidden md:ml-4 md:flex md:items-center">
               <button
                 type="button"
-                className="ml-6 rounded-md z-50 bg-orangesmash px-3 py-2 text-sm font-semibold text-black shadow-sm hover:bg-orangedark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="ml-6 rounded-md z-50 bg-cream px-3 py-2 text-sm font-semibold text-black shadow-sm hover:bg-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 onClick={handleModalOpen}
               >
                 Book tid

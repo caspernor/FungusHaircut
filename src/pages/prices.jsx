@@ -146,18 +146,18 @@ function classNames(...classes) {
 export default function Example() {
 
   return (
-      <div className="relative bg-orangesmash py-24 sm:py-32">
-      <div className="hidden-on-mobile md:absolute inset-0 mt-16 mx-4 mb-4 border-8 rounded-xl border-cream" />
-      <div className="hidden-on-mobile md:absolute inset-6 mt-16 mx-4 mb-4 border-4 rounded-xl border-cream opacity-70" />
-      <div className="hidden-on-mobile md:absolute inset-12 mt-16 mx-4 mb-4 border-2 rounded-xl border-cream opacity-40" />
+      <div className="relative bg-cream py-24 sm:py-32">
+      <div className="hidden-on-mobile md:absolute inset-0 mt-16 mx-4 mb-4 border-8 rounded-xl border-orangesmash" />
+      <div className="hidden-on-mobile md:absolute inset-6 mt-16 mx-4 mb-4 border-4 rounded-xl border-orangesmash opacity-70" />
+      <div className="hidden-on-mobile md:absolute inset-12 mt-16 mx-4 mb-4 border-2 rounded-xl border-orangesmash opacity-40" />
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-base font-semibold leading-7 text-cream" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>Priser</h2>
-          <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>
+          <h2 className="text-base font-semibold leading-7 text-greydark" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>Priser</h2>
+          <p className="mt-2 text-4xl font-bold tracking-tight text-orangesmash sm:text-5xl" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>
             Prispakker på de forskellige klip
           </p>
         </div>
-        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-cream" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>
+        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-greydark" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>
           Vælg lige den type klipning som passer dig og dine behov best.
         </p>
         <div className="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
@@ -165,12 +165,12 @@ export default function Example() {
             <div
               key={tier.id}
               className={classNames(
-                tier.mostPopular ? 'bg-white/5 ring-2 ring-greydark' : 'ring-2 ring-cream/100',
+                tier.mostPopular ? 'bg-white/5 ring-2 ring-greydark' : 'ring-2 ring-orangesmash/100',
                 'rounded-3xl p-8 xl:p-10'
               )}
             >
               <div className="flex items-center justify-between gap-x-4">
-                <h3 id={tier.id} className="text-lg font-bold leading-8 text-cream" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>
+                <h3 id={tier.id} className="text-lg font-bold leading-8 text-orangesmash" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>
                   {tier.name}
                 </h3>
                 {tier.mostPopular ? (
@@ -179,28 +179,28 @@ export default function Example() {
                   </p>
                 ) : null}
               </div>
-              <p className="mt-4 text-sm leading-6 text-cream" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>{tier.description}</p>
+              <p className="mt-4 text-sm leading-6 text-greydark" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>{tier.description}</p>
               <p className="mt-6 flex items-baseline gap-x-1">
                 <span className="text-4xl font-bold tracking-tight text-white"></span>
                 <span className="text-sm font-semibold leading-6 text-gray-300"></span>
               </p>
-              <p className="mt-2 text-2xl font-bold leading-6 text-white" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>{tier.price}</p>
+              <p className="mt-2 text-2xl font-bold leading-6 text-orangesmash" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>{tier.price}</p>
               <Link
                 href='/booking'
                 aria-describedby={tier.id}
                 className={classNames(
                   tier.mostPopular
                     ? 'bg-indigo-500 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500'
-                    : 'bg-cream text-orangedark hover:bg-white/20 focus-visible:outline-white',
+                    : 'bg-orangesmash text-greydark hover:bg-white/20 focus-visible:outline-white',
                   'mt-9 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2'
                 )}
               >
                 Book en tid
               </Link>
-              <ul role="list" className="mt-8 space-y-3 text-sm leading-6 text-cream xl:mt-10" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>
+              <ul role="list" className="mt-8 space-y-3 text-sm leading-6 text-greydark xl:mt-10" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}>
                 {tier.features.map((feature) => (
                   <li key={feature} className="flex gap-x-3">
-                    <CheckIcon className="h-6 w-5 flex-none text-white" aria-hidden="true" />
+                    <CheckIcon className="h-6 w-5 flex-none text-orangesmash" aria-hidden="true" />
                     {feature}
                   </li>
                 ))}

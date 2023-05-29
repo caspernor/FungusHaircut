@@ -44,10 +44,10 @@ export default function Example() {
   }
 
   return (
-      <div className="relative bg-orangesmash py-24 sm:py-32">
-      <div className="hidden-on-mobile md:absolute inset-0 mt-16 mx-4 mb-4 border-8 rounded-xl border-cream" />
-      <div className="hidden-on-mobile md:absolute inset-6 mt-16 mx-4 mb-4 border-4 rounded-xl border-cream opacity-70" />
-      <div className="hidden-on-mobile md:absolute inset-12 mt-16 mx-4 mb-4 border-2 rounded-xl border-cream opacity-40" />
+      <div className="relative bg-cream py-24 sm:py-32">
+      <div className="hidden-on-mobile md:absolute inset-0 mt-16 mx-4 mb-4 border-8 rounded-xl border-orangesmash" />
+      <div className="hidden-on-mobile md:absolute inset-6 mt-16 mx-4 mb-4 border-4 rounded-xl border-orangesmash opacity-70" />
+      <div className="hidden-on-mobile md:absolute inset-12 mt-16 mx-4 mb-4 border-2 rounded-xl border-orangesmash opacity-40" />
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:gap-x-8 lg:px-8 lg:py-32">
         {/* <div className="lg:col-span-4">
           <h2 className="text-2xl font-bold tracking-tight text-gray-900">Customer Reviews</h2>
@@ -129,20 +129,20 @@ export default function Example() {
           <h3 className="sr-only">Recent reviews</h3>
 
           <div className="flow-root">
-            <div className="-my-12 divide-y divide-cream">
+            <div className="-my-12 divide-y divide-orangesmash">
               {reviews.map((review, index) => (
                 <div key={review.author_name} className="py-12">
                   {console.log(index)}
                   <div className="flex items-center">
                     <img src={review.profile_photo_url} alt={`${review.author_name}.`} className="h-12 w-12 rounded-full" />
                     <div className="ml-4">
-                      <h4 className="text-sm font-bold text-cream">{review.author_name}</h4>
+                      <h4 className="text-sm font-bold text-darkgrey">{review.author_name}</h4>
                       <div className="mt-1 flex items-center">
                         {[0, 1, 2, 3, 4].map((rating) => (
                           <StarIcon
                             key={rating}
                             className={classNames(
-                              review.rating > rating ? 'text-yellow-400' : 'text-gray-300',
+                              review.rating > rating ? 'text-yellow-400' : 'text-darkgrey',
                               'h-5 w-5 flex-shrink-0'
                             )}
                             aria-hidden="true"
@@ -154,7 +154,7 @@ export default function Example() {
                   </div>
 
                   <div
-                    className="mt-4 space-y-6 text-base italic text-white"
+                    className="mt-4 space-y-6 text-base italic text-darkgrey"
                     dangerouslySetInnerHTML={{ __html: review.text }}
                   />
                 </div>
