@@ -20,7 +20,7 @@ export default function ExampleModal({ open, handleClose }) {
       const month = String(date.$d.getMonth() + 1).padStart(2, '0');
       const day = String(date.$d.getDate()).padStart(2, '0'); 
 
-      const response = await fetch(`https://fungusbe2.azurewebsites.net/timeslot/${year}-${month}-${day}`);
+      const response = await fetch(`http://127.0.0.1:5000/timeslot/${year}-${month}-${day}`);
       const data = await response.json();
       setBookingData(data.available_timeslots);
     } catch (error) {
@@ -37,7 +37,7 @@ export default function ExampleModal({ open, handleClose }) {
     };
     
     try {
-      const response = await fetch('https://fungusbe2.azurewebsites.net/booking', {
+      const response = await fetch('http://127.0.0.1:5000/booking', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -47,6 +47,7 @@ export default function ExampleModal({ open, handleClose }) {
       
       if (response.ok) {
         console.log('Booking successful!');
+        alert('Din booking er tilføjet')
         
       } else {
         console.error('Booking failed!');
@@ -164,7 +165,7 @@ export default function ExampleModal({ open, handleClose }) {
                       </div>
                     </RadioGroup>
                     <div className="">
-                      <label htmlFor="name" className="block text-sm font-medium leading-6 text-gray-900">
+                      <label htmlFor="name" className="block text-sm mt-2 font-medium leading-6 text-gray-900">
                         Namn
                       </label>
                       <div className="mt-2">
@@ -175,7 +176,7 @@ export default function ExampleModal({ open, handleClose }) {
                             id="name"
                             autoComplete="name"
                             className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
-                            placeholder="Petter hansen"
+                            placeholder="Petter Hansen"
                             value={name}
                             onChange={(e) => setName(e.target.value)}
                           />
@@ -184,7 +185,7 @@ export default function ExampleModal({ open, handleClose }) {
                     </div>
                   </div>
                   <div className="">
-                      <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                      <label htmlFor="email" className="block text-sm mt-2 flex justify-center font-medium leading-6 text-gray-900">
                         Email
                       </label>
                       <div className="mt-2">
