@@ -1,3 +1,4 @@
+"""
 from flask import Flask, request
 import pyodbc
 from datetime import datetime
@@ -85,11 +86,11 @@ def getAvailableTimeslots(date):
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-
-
-
 """
+
+
+
+
 from flask import Flask, request
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
@@ -180,4 +181,3 @@ def getAvailableTimeslots(date):
 
 if __name__ == '__main__':
     app.run(debug=True)
-"""
