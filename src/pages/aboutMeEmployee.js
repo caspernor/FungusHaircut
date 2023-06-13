@@ -7,7 +7,7 @@ const features = [
       ' Mit fokus er at arbejde med hårets struktur og vejlede mine kunder, så de kan få det bedste ud af deres hår.',
       ' Som frisør er jeg altid til eksamen, da mine kunders tilfredshed er afgørende. Jeg er fra Nørrebro, arbejder på Nørrebro og vil forlade verden fra Nørrebro. Min gamle læremester anbefalede mig at åbne salon på Elmegade, hvor det føles som en landsby.',
       ' Min salon er lille, hvilket giver mulighed for intime samtaler med kunder. Jeg har kunder fra alle samfundslag og vi snakker om livets udfordringer. Jeg elsker at lytte til deres historier. Selvom nogle siger at man ikke skal diskutere politik med sin frisør, så gør jeg det gerne.',
-      ' Menneskers indre finder jeg interresent. Det har altid fascineret mig. Jeg har en svaghed for dem, der har det svært. Selvom jeg nok er for dum til at blive psykolog, kan jeg blive psykoterapeut eller noget der kan hjælpe folk og gøre dem gladere.',
+      ' Jeg finder menneskers interresent, det har altid fascineret mig. Jeg har en svaghed for dem, der har det svært. Selvom jeg nok er for dum til at blive psykolog, kan jeg blive psykoterapeut eller noget der kan hjælpe folk og gøre dem gladere.',
       ' Det kan sagtens kombineres med at være frisør. At være frisør er ikke bare et job for mig. Jeg arbejder med noget levende og skaber noget. Det er et håndværk, og for mig er det mere en hobby, jeg føler mig meget privilegeret. Jeg er glad når jeg går på arbejde, og efter 10 dages ferie glæder jeg mig utroligt meget til at komme tilbage.',
     ]
     
@@ -45,7 +45,7 @@ export default function Example() {
             src="/Fungus-karim-1.jpg"
             alt="Karim Headshot"
             className="w-[48rem] max-w-100 rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
-            style={{width: "120%", marginTop: "100px" }}
+            style={{width: "120%", marginTop: "90px" }}
             
           />
         </div>

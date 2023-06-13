@@ -23,7 +23,7 @@ const tiers = [
     id: 'tier-startup',
     href: '#',
     price: '575 kr',
-    description: 'Den mest essentielle klip af længere hår',
+    description: 'Den mest essentielle klip af længere hår.',
     features: [
     '60 min.', 
     'Vask af hår', 
@@ -51,7 +51,7 @@ const tiers = [
     id: 'tier-freelancer',
     href: '#',
     price: '350 kr',
-    description: 'For børn fra 3-10 år',
+    description: 'For børn fra 3-10 år.',
     features: [
     '30 min.', 
     'Vask af hår', 
@@ -64,7 +64,7 @@ const tiers = [
     id: 'tier-freelancer',
     href: '#',
     price: '375 kr',
-    description: 'Hvis du ikke har så meget hår / tyndhåret',
+    description: 'Hvis du ikke har så meget hår / tyndhåret.',
     features: [
     '35 min.', 
     'Vask af hår',
@@ -90,7 +90,7 @@ const tiers = [
     id: 'tier-freelancer',
     href: '#',
     price: '400 kr',
-    description: 'En let måde at få solstrejf i det mørke vinterhår',
+    description: 'En let måde at få solstrejf i det mørke vinterhår. LKJ',
     features: [
     '30 min.',
     'Konsultasion af ønsker',  
@@ -191,7 +191,7 @@ export default function Example() {
                 className={classNames(
                   tier.mostPopular
                     ? 'bg-indigo-500 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500'
-                    : 'bg-orangesmash text-greydark hover:bg-white/20 focus-visible:outline-white',
+                    : 'bg-orangesmash text-greydark hover:bg-orangedark focus-visible:outline-white',
                   'mt-9 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2'
                 )}
               >
