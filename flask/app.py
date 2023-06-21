@@ -7,16 +7,16 @@ app = Flask(__name__)
 CORS(app)
 
 
-server = 'fungusbooking.database.windows.net'
-database = 'FungusBooking'
-username = 'CloudSA80f32b97'
-password = 'Fungushaircut100'
+server = 'Server URL'
+database = 'DB name'
+username = 'Your SQL db username'
+password = 'Your SQL db password here'
 driver = '{ODBC Driver 18 for SQL Server}'
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.sqlite'
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.sqlite' #If you want to run local
 
-#app.config['SQLALCHEMY_DATABASE_URI'] = f"mssql+pymssql://{username}:{password}@{server}/{database}?driver={driver}"
+app.config['SQLALCHEMY_DATABASE_URI'] = f"mssql+pymssql://{username}:{password}@{server}/{database}?driver={driver}"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
@@ -30,7 +30,7 @@ class Booking(db.Model):
 
 @app.route('/', methods=['GET'])
 def getIndex():
-    return 'Hejhej Backend'
+    return 'Hello Backend'
 
 @app.route('/bookings', methods=['GET'])
 def getBookings():
